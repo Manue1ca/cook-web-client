@@ -1,0 +1,7 @@
+.blurtrue{
+    filter: blur(2px);
+    transition: 0.5s;
+}
+.blurfalse{
+    transition: 0.5s;
+}

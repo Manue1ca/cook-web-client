@@ -1,0 +1,47 @@
+nav {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.Menufalse {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 0.5s;
+    width: 30%;
+    height: 100%;
+}
+.Menutrue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    width: 30%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 50;
+}
+
+.Menutrue a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+.closeBut {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: flex-end;
+    margin: 5px 20px;
+}
+
+.app-wraper-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
