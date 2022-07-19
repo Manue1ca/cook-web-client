@@ -5,6 +5,10 @@
   align-items: center;
   justify-content: center;
 }
+.authMain{
+  position: absolute;
+  left: -999px;
+}
 .authForm {
   display: flex;
   flex-direction: column;
@@ -16,7 +20,7 @@
   font-weight: 800;
   text-align: center;
 }
-.authForm > h3 {
+.formAuth > h3, .authForm > h3 {
   font-family: 'Mulish';
   font-weight: 300;
   text-align: center;
@@ -51,5 +55,52 @@
 }
 #logIn:hover{
   border-bottom: solid;
+}
+
+.authContainer{
+  background: #FAFAFA;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  margin: 20px 0;
+}
+
+.authContainerDots > span:empty {
+  border-radius: 25px;
+  background: #FFFFFF;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+  padding: 8px;
+  margin: 10px 0 5px 10px;
+  display: inline-block;
+}
+.formAuth {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 35px
+}
+.formAuth > div > input{
+  /*border-bottom: 1px solid;*/
+  /*border-top: transparent;*/
+  /*border-left: transparent;*/
+  /*border-right: transparent;*/
+  border: transparent;
+  background-color: transparent;
+  outline: none;
+  font-family: 'Mulish';
+  font-size: 1rem;
+  font-weight: 600;
+}
+.formAuth > div > input::placeholder{
+  color: black;
+  font-family: 'Mulish';
+  font-size: 1rem;
+  font-weight: 800;
+}
+.formAuth > div{
+  display: flex;
+  margin: 5px auto;
+  border-bottom: 2px solid;
+}
+.formAuth > div > img {
+  padding: 0px 15px 15px 15px;
 }
 
